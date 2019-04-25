@@ -1,0 +1,17 @@
+﻿@model CIS174ErikJohnsonOfficial.Web.Models.DeveloperModel
+@{
+    ViewBag.Title = "About the Team";
+}
+
+<h2>About Us Page</h2>
+<p>Information about our developers.</p>
+@foreach (var dev in Model.Developers)
+{
+    <div>
+        <h3 style="padding-top: 15px; text-decoration: underline">Developer</h3>
+        <p><strong>Name: </strong>@dev.Name</p>
+        <p><strong>E-mail: </strong>@dev.Email</p>
+        <p><strong>Role: </strong>@dev.Role</p>
+
+    </div>
+}
